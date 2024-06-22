@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  #message-display {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 100px;
+    overflow-y: auto;
+  }
+  
