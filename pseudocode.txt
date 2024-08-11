@@ -1,0 +1,19 @@
+1. Listen for the extension to be clicked.
+2. If clicked:
+    2.1. Define a function called "getElementByXpath" that gets an element using an xpath locator
+    2.2. Define a list that contains 4 xpath locations 
+    2.3. Open 4 new tabs.
+    2.4. Set all 4 tabs to navigate to the specified URL.
+3. For each opened tab:
+    3.1. Get element using "getElementByXpath" and the corresponding xpath location then assign the acquired element to a variable name "League_"
+    3.2. Click the "League_" element
+    3.2. Execute function "clubsFixturesMatchlinks" to extract clubs, fixtures, and match links.
+    3.3. Execute function "historyResultObjects" to extract historical match data and calculate statistics.
+    3.4. Get the list of objects returned by "historyResultObjects" representing calculated statistics.
+    3.5. If the number of objects is greater than one:
+        3.5.1. Generate a random integer from 1 to the number of objects.
+        3.5.2. Select the object corresponding to the generated random integer.
+    3.6. If the number of objects is one:
+        3.5.1. Do not make a selection.
+4. For each object gotten from each tab push into an array called "High_Probabilty_Fixtures" and save to local storage
+5. Call "High_Probabilty_Fixtures" array.

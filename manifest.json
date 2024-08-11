@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Your Extension Name",
+    "version": "1.0",
+    "description": "Description of your extension",
+    "permissions": ["tabs"],
+    "icons": {
+      "48": "icon48.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["Main_2.js"]
+      }
+    ]
+  }
