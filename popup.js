@@ -1,7 +1,7 @@
 var load_btn = document.getElementById('load');
 var play_btn = document.getElementById('play');
 var messageDisplay = document.getElementById('display');
-
+const url = "https://www.sportybet.com/ng/m/virtual/"
 
 // Listen for messages from the background script
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
@@ -19,7 +19,8 @@ function displayMessage(message) {
 function loaD(){
     //send load signal
     chrome.runtime.sendMessage({
-        command: "load"
+        command: "load",
+        url: url
     });
 }
 function plaY(){
